@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace LeetCodeConsole
+﻿namespace LeetCodeConsole
 {
     class Program
     {
         static void Main(string[] args)
         {
-            TwoSum.Run();
+            GetRanges.Run();
         }
     }
 }
