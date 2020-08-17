@@ -6,16 +6,11 @@
         public BinaryTreeNode Left { get; set; }
         public BinaryTreeNode Right { get; set; }
 
-        public BinaryTreeNode(int value, BinaryTreeNode left, BinaryTreeNode right)
+        public BinaryTreeNode(int value, BinaryTreeNode left = null, BinaryTreeNode right = null)
         {
             Value = value;
             Left = left;
             Right = right;
-        }
-
-        public BinaryTreeNode(int value)
-        {
-            Value = value;
         }
     }
 }
