@@ -6,7 +6,7 @@ namespace LeetCodeConsole
     {
         static void Main(string[] args)
         {
-            LinkedListAddition.Run();
+            TwoSum.Run();
         }
     }
 }
