@@ -9,5 +9,11 @@
         {
             Value = value;
         }
+
+        public override string ToString()
+        {
+            string value = Value.ToString();
+            return Next != null ? value += " -> " + Next.ToString() : value;
+        }
     }
 }
