@@ -13,7 +13,6 @@ namespace LeetCodeConsole
             _Node.Next.Next.Next = new LinkedListNode(4);
             _Node.Next.Next.Next.Next = new LinkedListNode(5);
 
-
             Console.WriteLine(_Node.ToString());
             //Console.WriteLine(ReverseRecursive(_Node).ToString());
             Console.WriteLine(ReverseIterative(_Node).ToString());
