@@ -12,10 +12,10 @@ namespace LeetCodeConsole
             int[] _Array = new int[] { 5, 1, 22, 25, 6, -1, 8, 10 };
             int[] _Sequence = new int[] { 1, 6, -1, 10 };
 
-            Console.WriteLine($"Valid Subsequence: {IsValidSubsequence(_Array, _Sequence)}");
+            Console.WriteLine($"Valid Subsequence: {IsValidSubSequence2(_Array, _Sequence)}");
         }
 
-        public static bool IsValidSubsequence(int[] array, int[] sequence)
+        public static bool IsValidSubSequence(int[] array, int[] sequence)
         {
             int _Pointer = 0;
             while (_Pointer < array.Length)
@@ -28,6 +28,25 @@ namespace LeetCodeConsole
             }
 
             return sequence.Length > 0 ? false : true;
+        }
+
+        public static bool IsValidSubSequence2(int[] array, int[] sequence)
+        {
+            int _Pointer = 0;
+            foreach (int num in array)
+            {
+                if (_Pointer == sequence.Length)
+                {
+                    break;
+                }
+
+                if (sequence[_Pointer] == num)
+                {
+                    _Pointer++;
+                }
+            }
+
+            return _Pointer == sequence.Length;
         }
     }
 }
