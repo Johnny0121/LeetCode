@@ -12,7 +12,5 @@
             Left = left;
             Right = right;
         }
-
-
     }
 }

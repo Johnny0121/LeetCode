@@ -51,7 +51,7 @@ namespace LeetCodeConsole
             return _Closest;
         }
 
-        public static BinaryTreeNode<int> GetTree()
+        private static BinaryTreeNode<int> GetTree()
         {
             BinaryTreeNode<int> _Root = new BinaryTreeNode<int>(10);
 
