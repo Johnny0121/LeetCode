@@ -1,16 +1,18 @@
 ﻿namespace Structures
 {
-    public class BinaryTreeNode
+    public class BinaryTreeNode<T>
     {
-        public int Value { get; set; }
-        public BinaryTreeNode Left { get; set; }
-        public BinaryTreeNode Right { get; set; }
+        public T Value { get; set; }
+        public BinaryTreeNode<T> Left { get; set; }
+        public BinaryTreeNode<T> Right { get; set; }
 
-        public BinaryTreeNode(int value, BinaryTreeNode left = null, BinaryTreeNode right = null)
+        public BinaryTreeNode(T value, BinaryTreeNode<T> left = null, BinaryTreeNode<T> right = null)
         {
             Value = value;
             Left = left;
             Right = right;
         }
+
+
     }
 }

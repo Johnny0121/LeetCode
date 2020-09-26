@@ -7,14 +7,14 @@ namespace LeetCodeConsole
     {
         public static void Run()
         {
-            BinaryTreeNode _Node = new BinaryTreeNode(5);
-            _Node.Left = new BinaryTreeNode(4);
-            _Node.Right = new BinaryTreeNode(7);
+            BinaryTreeNode<int> _Node = new BinaryTreeNode<int>(5);
+            _Node.Left = new BinaryTreeNode<int>(4);
+            _Node.Right = new BinaryTreeNode<int>(7);
 
             Console.WriteLine(IsValidBinarySearchTree(_Node));
         }
 
-        private static bool IsValidBinarySearchTree(BinaryTreeNode node)
+        private static bool IsValidBinarySearchTree(BinaryTreeNode<int> node)
         {
             if (node.Left == null && node.Right == null)
             {
@@ -24,7 +24,7 @@ namespace LeetCodeConsole
             return IsValidBinarySearchTreeHelper(node, int.MinValue, int.MaxValue);
         }
 
-        private static bool IsValidBinarySearchTreeHelper(BinaryTreeNode node, int lower, int upper)
+        private static bool IsValidBinarySearchTreeHelper(BinaryTreeNode<int> node, int lower, int upper)
         {
             if (node == null)
             {
